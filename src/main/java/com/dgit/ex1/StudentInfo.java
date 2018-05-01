@@ -1,12 +1,18 @@
 package com.dgit.ex1;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class StudentInfo {
 	private String name;
 	private String stdclass;
 	private int math;
 	private int eng;
 	private int kor;
+	
+	@Autowired
 	private Report report;
+	
+	@Autowired
 	private Family family;
 	
 	
